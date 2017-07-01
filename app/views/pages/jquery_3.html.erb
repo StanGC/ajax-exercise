@@ -1,0 +1,50 @@
+<p>
+  <a id="my-toggle-click">Toggle</a>
+</p>
+
+<div id="foo" style="border: 1px solid red;">
+  <p>bar</p>
+</div>
+
+<hr>
+
+<p>
+  <a id="my-toggle-click1">Toggle</a>
+</p>
+
+<div id="foo1" style="border: 1px solid red;">
+  <p>bar</p>
+</div>
+
+<hr>
+
+<p>
+  <a id="my-toggle-click2">Toggle</a>
+</p>
+
+<div id="foo2" style="border: 1px solid red;">
+  <p>bar</p>
+</div>
+
+<script>
+  $("#foo").hide();
+
+  $("#my-toggle-click").hover(function(){
+    $("#foo").toggle();
+  })
+
+
+  $("#foo1").hide();
+
+  $("#my-toggle-click1").hover(function(){
+    $("#foo1").slideToggle();
+  })
+
+
+  $("#foo2").hide();
+
+  $("#my-toggle-click2").hover(function(){
+    $("#foo2").fadeToggle();
+  })
+
+</script>
