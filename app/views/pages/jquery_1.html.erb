@@ -1,0 +1,85 @@
+<script>
+  $(document).ready(function(){
+    $("#my-click").click(function(){
+      $("#foo").html('<h1>zoo</h1>');
+    })
+
+    $("#my-click1").click(function(){
+      $("#foo1").text('<h1>zoo</h1>');
+    })
+
+    $("#my-click2").click(function(){
+      $("#foo2").prepend('<h1>zoo</h1>');
+    })
+
+    $("#my-click3").click(function(){
+      $("#foo3").append('<h1>zoo</h1>');
+    })
+
+    $("#my-click4").click(function(){
+      $("#foo4").before('<h1>zoo</h1>');
+    })
+
+    $("#my-click5").click(function(){
+      $("#foo5").after('<h1>zoo</h1>');
+    })
+})
+</script>
+
+<p>
+  <a id="my-click">Click Me</a>
+</p>
+
+<div id="foo" style="border: 1px solid red;">
+  <p>bar</p>
+</div>
+
+<hr>
+
+<p>
+  <a id="my-click1">Click Me</a>
+</p>
+
+<div id="foo1" style="border: 1px solid red;">
+  <p>bar</p>
+</div>
+
+<hr>
+
+<p>
+  <a id="my-click2">Click Me</a>
+</p>
+
+<div id="foo2" style="border: 1px solid red;">
+  <p>bar</p>
+</div>
+
+<hr>
+
+<p>
+  <a id="my-click3">Click Me</a>
+</p>
+
+<div id="foo3" style="border: 1px solid red;">
+  <p>bar</p>
+</div>
+
+<hr>
+
+<p>
+  <a id="my-click4">Click Me</a>
+</p>
+
+<div id="foo4" style="border: 1px solid red;">
+  <p>bar</p>
+</div>
+
+<hr>
+
+<p>
+  <a id="my-click5">Click Me</a>
+</p>
+
+<div id="foo5" style="border: 1px solid red;">
+  <p>bar</p>
+</div>
